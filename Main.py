@@ -18,7 +18,7 @@ def encrypt_file(path):
     with open(path) as f:
         plain_text = f.read()
 
-    # The key length must be 16 (AES-128), 24 (AES-192), or 32 (AES-256) Bytes.
+    # 6 (AES-128), 24 (AES-192), 32 (AES-256) Bytes.
     key = b'this is a 16 key'
 
     iv = Random.new().read(AES.block_size)
